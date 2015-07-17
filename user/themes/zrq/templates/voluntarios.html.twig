@@ -1,0 +1,24 @@
+{% embed 'partials/base.html.twig' %}
+
+	{% set collection = page.collection() %}
+
+	{% block content %}
+		{% set blog_image = page.media.images|first %}
+      
+		<div class="content-wrapper blog-content-list g-grid pure-g-r">
+			<div id="listing" class="g-block pure-u-2-3">
+				{% for child in collection %}
+			        {% include 'voluntario.html.twig' with {'page':child} %}
+			    {% endfor %}
+
+                {% if config.plugins.pagination.enabled and collection.params.pagination %}
+                    {% include 'pagination.html.twig' with {'pagination':collection.params.pagination} %}
+                {% endif %}
+			</div>
+	
+		</div>
+	{% endblock %}
+
+{% endembed %}
+
+
