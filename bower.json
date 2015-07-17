@@ -10,9 +10,9 @@
   "dependencies": {
     "jquery": "latest",
     "fontawesome": "latest",
-    "normalize-scss": "~3.0.3",
     "pure": "~0.6.0",
     "echojs": "~1.7.1",
-    "superfish": "~1.7.5"
+    "superfish": "~1.7.5",
+    "normalize-css": "~3.0.3"
   }
 }
