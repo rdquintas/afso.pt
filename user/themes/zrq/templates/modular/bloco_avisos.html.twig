@@ -1,0 +1,76 @@
+{% set counter = 0 %}
+{% if page.header.aviso1.visivel == "true" %}
+	{% set counter = counter + 1 %}
+{% endif %}
+
+{% if page.header.aviso2.visivel == "true" %}
+	{% set counter = counter + 1 %}
+{% endif %}
+
+
+{% if page.header.aviso3.visivel == "true" %}
+	{% set counter = counter + 1 %}
+{% endif %}
+
+{% if counter != 0 %}
+	<section class="module avisos">
+	{% if counter == 1 %}
+		{% set class = "col-1-1" %}
+	{% endif %}
+	{% if counter == 2 %}
+		{% set class = "col-1-2" %}
+	{% endif %}
+	{% if counter == 3 %}
+		{% set class = "col-1-3" %}
+	{% endif %}
+	
+	{% if page.header.aviso1.visivel %}
+		<div class="aviso {{ class }}">
+			{% if page.header.aviso1.titulo != "" %}
+				<h4>{{ page.header.aviso1.titulo }}</h4>
+			{% endif %}
+
+			{% if page.header.aviso1.texto != "" %}
+				<p>{{ page.header.aviso1.texto }}</p>
+			{% endif %}
+			
+			{% if page.header.aviso1.link != "" %}
+				<a class="button" href="{{ page.header.aviso1.link }}" target="_blank">Mais</a>
+			{% endif %}
+		</div>
+	{% endif %}
+
+	{% if page.header.aviso2.visivel %}
+		<div class="aviso {{ class }}">
+			{% if page.header.aviso2.titulo != "" %}
+				<h4>{{ page.header.aviso2.titulo }}</h4>
+			{% endif %}
+
+			{% if page.header.aviso2.texto != "" %}
+				<p>{{ page.header.aviso2.texto }}</p>
+			{% endif %}
+			
+			{% if page.header.aviso2.link != "" %}
+				<a class="button" href="{{ page.header.aviso2.link }}" target="_blank">Mais</a>
+			{% endif %}
+		</div>
+	{% endif %}
+
+	{% if page.header.aviso3.visivel %}
+		<div class="aviso {{ class }}">
+			{% if page.header.aviso3.titulo != "" %}
+				<h4>{{ page.header.aviso3.titulo }}</h4>
+			{% endif %}
+
+			{% if page.header.aviso3.texto != "" %}
+				<p>{{ page.header.aviso3.texto }}</p>
+			{% endif %}
+			
+			{% if page.header.aviso3.link != "" %}
+				<a class="button" href="{{ page.header.aviso3.link }}" target="_blank">Mais</a>
+			{% endif %}
+		</div>
+	{% endif %}
+	
+	</section>
+{% endif %}

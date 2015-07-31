@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'themes://zrq/zrq.yaml',
-    'modified' => 1437144165,
+    'modified' => 1437407124,
     'data' => [
         'enabled' => true,
         'dropdown' => [
-            'enabled' => false
+            'enabled' => true
         ],
         'streams' => [
             'schemes' => [

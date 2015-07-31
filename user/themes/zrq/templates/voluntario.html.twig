@@ -1,4 +1,13 @@
-{% block content %}
-	<h1>{{ page.url }}</h1>
-	<a href="{{ page.url }}">{{ page.title }}</a>
+{% embed 'partials/base.html.twig' %}
+{% block content %}  
+	<section class="page voluntario">  		
+		<h1>{{ page.title }}</h1>
+		<h2>{{ page.header.zona }}</h2>
+	  	{% set img = page.media.images|first %}
+		<img src="{{ img.resize(450, 300).url }}">
+		<div class="content">
+			{{ page.content }}
+		</div>
+    </section>		   		
 {% endblock %}
+{% endembed %}

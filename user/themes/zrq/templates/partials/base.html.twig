@@ -34,8 +34,8 @@
     {% endblock %}
     {{ assets.css() }}
 .
-    {% do assets.addJs('theme://js/modernizr.custom.31616.js', 100) %}
-    {{ assets.js() }} 
+    {# {% do assets.addJs('theme://js/modernizr.custom.31616.js', 100) %} #}
+    {# {{ assets.js() }}  #}
 
     <script type="text/javascript">
       // Insert GOOGLE-ANALYTICS script here!!!      
@@ -58,7 +58,7 @@
 
     {% include 'partials/header.html.twig' %}
 
-    <div class="container">
+    <div class="main-container">
       {% block content %}{% endblock %}        
       {% include 'partials/footer.html.twig' %}
     </div>

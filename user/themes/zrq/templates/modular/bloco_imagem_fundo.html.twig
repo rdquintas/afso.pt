@@ -1,1 +1,16 @@
-{{ page.content }}
+{% if page.header.bloco_visivel == "true" %}
+	<section class="module hero desktop">	
+		{% for img in page.media.images|randomize %}
+			<div>
+				<img class="hero" src="{{ img.cropResize(1300,500).url }}" alt="">
+			</div>
+		{% endfor %}
+	</section>
+	<section class="module hero mobile hidden">	
+		{% for img in page.media.images|randomize %}
+			<div>
+				<img class="hero" src="{{ img.crop(300,300,600,900).url }}" alt="">
+			</div>
+		{% endfor %}
+	</section>	
+{% endif %}

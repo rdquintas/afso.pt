@@ -1,3 +1,0 @@
----
-title: Cocas o Sapo
----

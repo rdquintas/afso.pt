@@ -1,1 +1,13 @@
-{{ page.content }}
+{% if page.header.bloco_visivel == "true" %}
+	<section class="module valores">
+	<h2>{{ page.header.title }}</h2>
+	<hr>
+	<div class="frases-container">
+		{% for frase in page.header.frases|randomize %}
+			<div>
+				<p>{{ frase }}</p>
+			</div>
+		{% endfor %}
+	</div>
+	</section>
+{% endif %}

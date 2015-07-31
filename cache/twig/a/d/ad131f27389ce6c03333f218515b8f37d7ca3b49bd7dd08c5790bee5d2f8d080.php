@@ -29,16 +29,11 @@ class __TwigTemplate_ad131f27389ce6c03333f218515b8f37d7ca3b49bd7dd08c5790bee5d2f
     {
         // line 4
         echo "\t";
-        echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array());
-        echo "
-
-\t  ";
-        // line 6
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "collection", array(), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["module"]) {
-            // line 7
-            echo "        ";
+            // line 5
+            echo "\t\t";
             echo $this->getAttribute($context["module"], "content", array());
             echo "
     ";
@@ -60,6 +55,6 @@ class __TwigTemplate_ad131f27389ce6c03333f218515b8f37d7ca3b49bd7dd08c5790bee5d2f
 
     public function getDebugInfo()
     {
-        return array (  41 => 7,  37 => 6,  31 => 4,  28 => 3,  11 => 1,);
+        return array (  36 => 5,  31 => 4,  28 => 3,  11 => 1,);
     }
 }

@@ -1,1 +1,26 @@
-{{ page.content }}
+{% if page.header.bloco_visivel == "true" %}
+	<section class="module noticias">		
+		<h1>{{ page.title }}</h1>
+		{% for noticia in page.find('/noticias').children.order('date', 'desc').slice(0, 5) %}
+			<hr>
+			<div class="noticia">						
+				{% set img = noticia.media.images|first %}
+				<div class="imagem">
+				{% if img %}
+					<a class="image" href="{{ noticia.url }}">
+						<img src="{{ img.cropResize(150, 150).url }}">
+					</a>	
+				{% endif %}
+				</div>
+				
+				<div class="conteudo">		
+					<a class="title" href="{{ noticia.url }}">
+						<h3>{{ noticia.title }}</h3>
+					</a>
+					<p class="date">{{ noticia.date|date("d/M/Y") }}</p>
+				</div>				
+
+			</div>
+		{% endfor %}	
+	</section>
+{% endif %}

@@ -1,14 +1,36 @@
-<section class="header">
-    <a class="burger-icon" href="#">
-        <img src="{{ theme_url }}/images/burguer.png">
-    </a>        
-    <div class="logo">
-        <h5>{{ config.site.title }}</h5>
-    </div>
-    <nav id="original-menu" class="navigation-menu">
+{% set contactos = page.find("/contactos") %}
+
+{% if page.slug == "home" %}
+    <header class="header" data-home="true">    
+{% else %}
+    <header class="header smaller" data-home="false">    
+{% endif %}
+
+    <ul class="logo">        
+        <li class="imagem" >
+            <a href="/">
+                <img src="{{ theme_url }}/images/logo.png" alt="">    
+            </a>
+        </li>
+        <li class="email">
+            <a  href="mailto:{{ contactos.header.email }}" target="_blank">
+                <i class="fa fa-envelope-o"></i>  
+            </a>
+        </li>
+        <li class="facebook">
+            <a href="http://wwww.facebook.com/afso" target="_blank">
+                <i class="fa fa-facebook"></i>  
+            </a>
+        </li>   
+    </ul>
+    <nav id="desktop-menu">
         {% include 'partials/navigation.html.twig' with {"withSuperFish": "true"} %}
     </nav>
-</section>
+    <a class="burger-icon" href="#">
+        <i class="fa fa-bars"></i>  
+        <i class="fa fa-times hidden"></i>  
+    </a>  
+</header>
 
 <nav id="mobile-menu" class="">
     {% include 'partials/navigation.html.twig' with {"withSuperFish": "false"} %}

@@ -1,1 +1,16 @@
-{{ page.content }}
+{% if page.header.bloco_visivel == "true" %}
+	<section class="module testemunho">
+		<h1>{{ page.header.title }}</h1>
+		{% set img = page.media.images|first %}
+		
+		{% if img %}
+			<div class="image">
+				<img src="{{ img.url }}">
+			</div>
+		{% endif %}		
+
+		<div class="content">
+			{{ page.content }}
+		</div>		
+	</section>
+{% endif %}

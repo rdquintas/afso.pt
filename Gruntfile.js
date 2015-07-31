@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 
     var _js_libs = [
+        "user/themes/zrq/js/slick.min.js",
         "bower_components/echojs/dist/echo.min.js",
         "bower_components/superfish/dist/js/hoverIntent.js",
         "bower_components/superfish/dist/js/superfish.min.js",

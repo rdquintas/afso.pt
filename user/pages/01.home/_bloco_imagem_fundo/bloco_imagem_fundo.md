@@ -1,6 +1,3 @@
 ---
-title: Imagem de fundo
+bloco_visivel: true
 ---
-
-Imagem de fundo
-
