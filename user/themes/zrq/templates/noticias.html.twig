@@ -5,32 +5,27 @@
 	{% block content %}  
 		<section class="page noticias">
 			{% for noticia in collection %}
+				<hr>
 				<div class="noticia">
 					<a class="title" href="{{ noticia.url }}">
-						<h1>{{ noticia.title }}</h1>
+						<h2>{{ noticia.title }}</h2>
 					</a>
-					
+					<p class="date">{{ noticia.date|date("d/M/Y") }}</p>
+
 					{% set img = noticia.media.images|first %}
+					
 					{% if img %}
-					<div class="img col-2">
 						<a class="image" href="{{ noticia.url }}">
 							<img src="{{ img.cropResize(250, 250).url }}">
-						</a>	
-					</div>
-
-					<div class="container col-2">		
-
-					{% else %}		
-					<div class="container col-1">	
+						</a>					
 					{% endif %}
-						<p class="date">{{ noticia.date|date("d/M/Y") }}</p>
-						<p class="content">{{ noticia.summary }}</p>
-					</div>
+					
+					<p class="content">{{ noticia.summary }}</p>				
 				</div>
 			{% endfor %}
         	
         	{% if config.plugins.pagination.enabled and collection.params.pagination %}
-            	{% include 'pagination.html.twig' with {'pagination':collection.params.pagination} %}
+            	{% include 'partials/pagination.html.twig' with {'pagination':collection.params.pagination} %}
             {% endif %}
 		</section>
 	{% endblock %}

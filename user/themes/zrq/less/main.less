@@ -195,11 +195,70 @@
         }
     } // module.valores
 } // page.home
-.footer {
-    padding: @global_padding * @scale;
-    text-align: center;
-} // footer
-.page.default {
+.page.noticias {
+    padding: @global_padding * @scale * @scale * @scale * @scale;
+    @media screen and (max-width: 1000px) {
+        padding: @global_padding;
+        padding-top: 5rem;
+    }
+    img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    hr {
+        color: lighten(@header_color, 80%);
+        width: 85%;
+    }
+} // page.noticias
+.page.voluntarios {
+    padding-left: 0;
+    padding-right: 0;
+    @media screen and (max-width: 1000px) {
+        padding: @global_padding;
+        padding-top: 5rem;
+    }
+    .da-thumbs {
+        width: 100%;
+    }
+    .drop-down {
+        padding: 3rem 0 1rem 2rem;
+    }
+    ul {
+        li {
+            width: 100% / 4;
+            padding: 0;
+            margin: 0;
+            .texto {
+                padding: 1rem;
+                p {
+                    margin: 0;
+                }
+            }
+            .intro {
+                background-color: @primary_color;
+                color: contrast(@primary_color);
+                height: 225px;
+                padding: 1rem;
+                p {
+                    margin: 0;
+                }
+                i {
+                    float: right;
+                    font-size: 4rem;
+                }
+            } // intro
+            img {
+                width: 100%;
+            }
+            a {
+                color: darken(@background_color, 10%);
+            }
+        } // li
+    } // ul
+} // page.voluntarios
+.page.default,
+.page.noticia,
+#error {
     padding: @global_padding * @scale * @scale * @scale * @scale;
     @media screen and (max-width: 1000px) {
         padding: @global_padding;
@@ -209,6 +268,8 @@
         width: 100%;
         margin: 0 auto;
     }
-}
-
-// page.default
+} // page.default
+.footer {
+    padding: @global_padding * @scale;
+    text-align: center;
+} // footer

@@ -1,7 +1,7 @@
 ---
 title: Entre em contacto!
 menu: Contactos
-telefone: (+351) 123 456 789
-email: email@afso.pt
+telefone: (+351) 963 810 680
+email: afsoeiras@gmail.com
 ---
 

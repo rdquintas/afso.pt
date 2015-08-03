@@ -1,4 +1,6 @@
 ---
 title: Homem Aranha
-zona: Grande Lisboa
+zona: v01
+email: email@gmail.com
+telefone: 961 234 567
 ---

@@ -1,21 +1,94 @@
 {% embed 'partials/base.html.twig' %}
+{% block content %}  
+	{% macro createSelectEntry(selected, value) %}
+		{% if selected == "true"  %}
+			<option value="{{ value }}" selected="selected">{{ value }}</option>
+		{% else %}			
+			<option value="{{ value }}">{{ value }}</option>
+		{% endif %}
+	{% endmacro %}
 
 	{% set collection = page.collection() %}
+	{% set zona = uri.query('zona') %}
 
-	{% block content %}  
-  		<section class="page voluntarios">  		
+	{% if not zona %}
+		{% set zona = "todas" %}
+	{% endif %}
+	
+
+{# 		{% set counter = 0 %}	
+		
+		{% for img in page.media.images %}	    
+			{% if img.ano == yearURLparam or yearURLparam == "TODOS"%}
+			    {% set counter = counter + 1 %}
+		    {% endif %}
+		{% endfor %} 
+
+  		<section class="container">
+  			{% if counter == 0 %}
+		    	<h4>No results found for that year</h4>
+			{% else %}			
+	            <ul id="da-thumbs" class="da-thumbs">
+				{% for img in page.media.images %}	    
+				    {% if img.ano == yearURLparam or yearURLparam == "TODOS"%}
+				
+	</div>
+ #}
+
+  		<section class="page voluntarios"> 
+  			<div class="drop-down">
+				<label for="zona">Escolha a Zona:</label>
+				<select id="zona">
+					{% if zona|lower == "todas"  %}		
+						{{ _self.createSelectEntry("true", "todas") }}
+					{% else %}	
+						{{ _self.createSelectEntry("false", "todas") }}
+					{% endif %}
+
+					{% for i in page.header.zonas %}    	
+			    		{% if i|lower == zona|lower  %}		
+							{{ _self.createSelectEntry("true", i) }}
+						{% else %}	
+							{{ _self.createSelectEntry("false", i) }}
+						{% endif %}
+					{% endfor %}
+				</select>
+			</div>	
+
             <ul id="da-thumbs" class="da-thumbs">
-			{% for voluntario in collection %}
-			  	{% set img = voluntario.media.images|first %}
-				<li>
-					<a href="{{ voluntario.url }}">
-						<img src="{{ theme_url }}/images/loading_spinner.gif" alt="" data-echo="{{ img.resize(450, 300).url }}">
-						<div class="texto">
-							<p class="nome">{{ voluntario.title }}</p>
-							<p class="zona">{{ voluntario.header.zona }}</p>
-						</div>
-					</a>
+            	<li>
+					<div class="intro">
+						{% if zona == "todas" %}
+							<h3 class="nome">Todos os nossos voluntários</h3>
+							<i class="fa fa-arrow-circle-right"></i>
+						{% else %}
+							<h3 class="nome">Os voluntários da</h3>
+							<h3 class="zona">zona: {{ zona }}</h3>
+							<i class="fa fa-arrow-circle-right"></i>
+						{% endif %}
+					</div>
 				</li>
+			{% for voluntario in collection %}
+				{% if zona|lower == voluntario.header.zona|lower or zona == "todas" %}				
+			  	{% set img = voluntario.media.images|first %}
+					<li>
+						<a href="{{ voluntario.url }}">
+							<img src="{{ theme_url }}/images/loading_spinner.gif" alt="" data-echo="{{ img.resize(450, 300).url }}">
+							<div class="texto">
+								<h4 class="nome">{{ voluntario.title }}</h4>
+								<p class="zona">Zona: {{ voluntario.header.zona }}</p>
+
+								{% if voluntario.header.email %}
+								<p class="email">Email: {{ voluntario.header.email }}</p>				
+								{% endif %}
+								
+								{% if voluntario.header.telefone %}
+								<p class="telefone">Telefone: {{ voluntario.header.telefone }}</p>
+								{% endif %}
+							</div>
+						</a>
+					</li>
+				{% endif %}
 			{% endfor %}            	
             </ul>
         </section>		   		
