@@ -2,7 +2,7 @@
 {% block content %}	
 	<section class="page contactos">
 		<h1>{{ page.title }}</h1>
-		<div class="col-2">
+		{# <div class="col-1-2">
 			<form id="contact-form" action="{{ theme_url }}/assets/submit.php" method="post" novalidate="">
 				<div class="form-group">
 				    <input id="contact-name" name="contactName" placeholder="Nome">
@@ -21,20 +21,20 @@
 			    </div>
 			    <input type="hidden" name="submitted" id="submitted" value="true">
 			</form>			
-		</div>
-		<div class="col-2">
+		</div> #}
+		<div class="col-1-2">
 			<h3>Os nossos contactos</h3>
 			<div class="phone">
-				<img src="{{ theme_url }}/images/phone.png">
+				<i class="fa fa-phone"></i>				
 				<p>{{ page.header.telefone }}</p>
 			</div>
 			<div class="email">
-				<img src="{{ theme_url }}/images/email.png">
+				<i class="fa fa-envelope-o"></i>				
 				<a href="mailto:{{ page.header.email }}">{{ page.header.email }}</a>
 			</div>
 			<div class="facebook">
-				<img src="{{ theme_url }}/images/facebook.png">
-				<a href="http://wwww.facebook.com/afso" target="_blank">facebook.com/afso</a>
+				<i class="fa fa-facebook"></i>				
+				<a href="https://www.facebook.com/AFSOeiras" target="_blank">facebook.com/AFSOeiras</a>
 			</div>
 		</div>
 	</section>

@@ -2,18 +2,72 @@
 title: Associação
 ---
 
-# Ora Viva
-## Ora Viva
-### Ora Viva
-#### Ora Viva
-##### Ora Viva
+O projecto família solidária de Oeiras iniciou-se com um pequeno grupo ligado à paróquia de Nossa Senhora da Purificação de Oeiras, que se foi alargando a pessoas de outras origens, unidas num ideal comum e numa vontade de intervir.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nemo repellendus cumque. Optio quae accusantium ratione explicabo aut molestiae, illo a aperiam maxime quod, suscipit nesciunt iste veritatis nemo alias repudiandae quibusdam, saepe enim. Delectus accusamus, sed hic minus est nemo temporibus perferendis eos itaque ab, nisi, reprehenderit sit autem! Voluptas saepe debitis magni! Quo inventore tempore, alias nam ut corporis beatae dicta est vitae. Nihil sapiente sequi nesciunt excepturi deleniti. Provident explicabo, illum laboriosam quaerat laudantium ducimus, voluptas beatae eligendi quisquam blanditiis, non, quia voluptate eaque eius praesentium repellat nisi fuga! 
+Pretende apoiar alguns com pequenos contributos de muitos e é um apoio de emergência, limitado no tempo e acautelando a exposição das famílias apoiadas.
 
-![](image01.jpg)
+É dirigido em particular a famílias com dificuldades económicas bruscas e que não se enquadram nos sistemas de apoio social.
 
-Consequatur labore nemo eligendi iste quam error molestiae placeat enim quaerat temporibus, accusamus quod dignissimos perferendis, voluptatem laborum accusantium tempore expedita fugit similique. Maiores dolorum ipsum incidunt, porro omnis exercitationem veniam sapiente tenetur adipisci facilis quidem dolor esse nobis itaque nulla odio nihil possimus nesciunt ipsa sequi suscipit rem reprehenderit repudiandae saepe! Dignissimos, quibusdam, assumenda. Odio facere obcaecati quaerat inventore enim, pariatur eaque, ipsam perferendis deleniti quidem ipsa, vel est fugit voluptatem voluptatum ex consequatur. 
+O projecto tem como objectivo o envolvimento da comunidade num gesto continuado de solidariedade social, criando dinâmicas de entreajuda em vizinhança, locais de trabalho ou outro tipo de comunidades. 
 
-![](image02.jpg)
 
-Incidunt hic ad modi, similique, adipisci repudiandae nostrum, voluptas et eius nisi eos mollitia dolore velit maiores! Omnis iusto eaque esse, deleniti cum aliquam corrupti quae, corporis accusantium? Adipisci sequi quis, iste ratione.
+##Visão
+Família Solidária de Oeiras é um projecto local de solidariedade assumindo a gratuidade, a responsabilidade e a participação comunitária como factores determinantes para a construção de um mundo mais justo e solidário.
+ 
+##Missão  
+Família solidária de Oeiras assume como missão o desenvolvimento de uma dinâmica comunitária estruturada de apoio a famílias em situação de emergência.
+
+##Valores  
+O projecto Família Solidária de Oeiras inspira-se nos valores universais de solidariedade, fraternidade e cristãos de comunhão e caridade. O projecto Família Solidária de Oeiras assenta no compromisso, gratuitidade e dignidade humana.
+
+##Princípios
+###Comunitário
+o apoio prestado deve emergir essencialmente da comunidade.
+
+###Gratuidade
+trabalho voluntário, sem contrapartidas, sem conhecer nem ser conhecido dos beneficiários.
+
+###Discrição
+o apoio às famílias necessitadas será gerido com a maior discrição e a menor exposição das mesmas.
+
+###Limitado
+um apoio de emergência, limitado no tempo e limitado nos meios.
+
+###Parceria
+em rede com projectos afins, em colaboração com outras entidades ou iniciativas convergentes para os mesmos fins.
+
+###Complementar
+Procurando constituir uma alternativa e alcançar públicos ou áreas menos enquadrados pelos apoios existentes
+
+----
+
+#Corpos Sociais
+
+##Direcção:
+Presidente: Francisco de Herédia Caldeira Cabral
+
+Vice-Presidente: Maria Teresa Duarte Amaral Lopes
+
+Secretário: Carlos Pires Eurico Lisboa
+
+Tesoureiro: Susana Rosas da Silva de Figueiredo Marques
+
+Vogal: Sónia Cristina da Silva Vicente Cascão Bárcia
+
+##Mesa da Assembleia Geral: 
+Presidente: António da Fonseca Caldeira Cabral
+
+Secretário: Ana Márcia Pelicano de Carvalho Sequeira Pinheiro
+
+Vogal: Tomás McDonnell Braamcamp de Mancelos
+
+##Conselho Fiscal:
+Presidente: Ricardo Manuel de Magalhães Pinheiro Alves
+
+Vogal: Bruno Alexandre Sequeira Pinheiro
+
+Vogal: Luís Manuel das Neves Azevedo Machado
+
+
+##Documentos
+[Estatutos AFSO](../user/pages/associacao/EstatutosAFSO.pdf)

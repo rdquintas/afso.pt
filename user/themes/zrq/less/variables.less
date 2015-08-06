@@ -16,16 +16,17 @@
 @header_font_weight: 400;
 
 // COLORS
-@primary_color: #ec601c; //laranja
-@secondary_color: #546569; //cinzento esverdeado
-@tertiary_color: #64bf9e; //verde
+@primary_color: #0179AD; // azul AFSO
+@secondary_color: #133D4D; // azul escuro
+@tertiary_color: #FEC200; // amarelo torrad
 
 @background_color: #fff;
-@header_color: #000;
-@bloco_avisos_color: @primary_color;
+@header_color: @primary_color;
+@bloco_avisos_color: @secondary_color;
 @bloco_noticias_color: @secondary_color;
 @bloco_testemunho_color: @primary_color;
 @bloco_valores_color: @secondary_color;
 
-@link_color: @tertiary_color;
-@link_hover_color: darken(@tertiary_color, 30%);
+@link_color: darken(@tertiary_color, 0%);
+@link_hover_color: darken(@tertiary_color, 15%);
+// @link_hover_color: lighten(@secondary_color, 20%);

@@ -1,5 +1,5 @@
 ---
 bloco_visivel: true
-title: Os nossos valores
-frases: ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id alias consequatur a aliquam sint illo quos magnam voluptatibus eveniet eum.","Illo maxime eveniet reprehenderit repellat. Deleniti praesentium doloremque officiis repudiandae vero quo accusamus molestiae","Commodi animi quam impedit aperiam minima id earum necessitatibus laudantium non rerum consequatur, suscipit eaque","Autem provident, quis dolores illum error nostrum. Maiores consequuntur, eligendi, aspernatur quas facilis","Laborum unde illum. Optio quam illum ea distinctio perferendis, aut est laboriosam cumque dolores alias","Accusantium quos, autem laudantium ad",]
+title: Os nossos princípios
+frases: ["Gratuidade – trabalho voluntário, sem contrapartidas, sem conhecer nem ser conhecido dos beneficiários.","Comunitário – o apoio prestado deve emergir essencialmente da comunidade.","Discrição – o apoio às famílias necessitadas será gerido com a maior discrição e a menor exposição das mesmas.", "Limitado – um apoio de emergência, limitado no tempo e limitado nos meios.","Parceria – em rede com projectos afins, em colaboração com outras entidades ou iniciativas convergentes para os mesmos fins.","Complementar – Procurando constituir uma alternativa e alcançar públicos ou áreas menos enquadrados pelos apoios existentes"]
 ---

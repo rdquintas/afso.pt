@@ -2,18 +2,46 @@
 title: Intervenientes
 ---
 
-# Ora Viva
-## Ora Viva
-### Ora Viva
-#### Ora Viva
-##### Ora Viva
+[Folheto AFSO](../user/pages/intervenientes/Folheto_AFSO.pdf)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nemo repellendus cumque. Optio quae accusantium ratione explicabo aut molestiae, illo a aperiam maxime quod, suscipit nesciunt iste veritatis nemo alias repudiandae quibusdam, saepe enim. Delectus accusamus, sed hic minus est nemo temporibus perferendis eos itaque ab, nisi, reprehenderit sit autem! Voluptas saepe debitis magni! Quo inventore tempore, alias nam ut corporis beatae dicta est vitae. Nihil sapiente sequi nesciunt excepturi deleniti. Provident explicabo, illum laboriosam quaerat laudantium ducimus, voluptas beatae eligendi quisquam blanditiis, non, quia voluptate eaque eius praesentium repellat nisi fuga! 
+[Princípios Gerais](../user/pages/intervenientes/PrincipiosGerais.pdf)
 
-["File PDF"](../user/pages/intervenientes/file.pdf)
+[Regulamento Voluntários AFSO](../user/pages/intervenientes/RegulamentoVoluntariosAFSO.pdf)
 
-Consequatur labore nemo eligendi iste quam error molestiae placeat enim quaerat temporibus, accusamus quod dignissimos perferendis, voluptatem laborum accusantium tempore expedita fugit similique. Maiores dolorum ipsum incidunt, porro omnis exercitationem veniam sapiente tenetur adipisci facilis quidem dolor esse nobis itaque nulla odio nihil possimus nesciunt ipsa sequi suscipit rem reprehenderit repudiandae saepe! Dignissimos, quibusdam, assumenda. Odio facere obcaecati quaerat inventore enim, pariatur eaque, ipsam perferendis deleniti quidem ipsa, vel est fugit voluptatem voluptatum ex consequatur. 
 
-![](../user/pages/intervenientes/image01.jpg)
 
-Incidunt hic ad modi, similique, adipisci repudiandae nostrum, voluptas et eius nisi eos mollitia dolore velit maiores! Omnis iusto eaque esse, deleniti cum aliquam corrupti quae, corporis accusantium? Adipisci sequi quis, iste ratione.
+##Famílias Solidárias
+Oferecem mensalmente uma pequena contribuição em bens alimentares.
+
+##Associados
+Asseguram o funcionamento institucional da AFSO, contribuindo com quotizações, participando na sua organização do projecto.
+
+##Voluntários
+Assumem a angariação de “famílias solidárias” na vizinhança da sua residência ou noutras comunidades de que faça parte, executando a recolha mensal de alimentos, o seu acondicionamento e distribuição.
+
+##Responsáveis de zona
+Acompanham o trabalho por bairros, assistem as famílias solidárias da sua zona no esclarecimento de questões relativas ao projecto e acompanham reforçam a acção dos voluntários.
+
+##Benfeitores
+Contribuem para os fins do projecto com donativos em dinheiro.
+
+![](P10503342_pb.jpg)
+
+##Amigos
+Associados ao projecto sem qualquer compromisso, mantêm-se Informados, contribuem na divulgação e promoção do mesmo, constituindo uma reserva voluntária para acções ou contribuições pontuais.
+
+##Beneficiários
+Famílias seleccionadas que recebem durante um período limitado de tempo o apoio alimentar do projecto Família Solidária.
+
+
+##Parceiros
+Entidades locais (nacionais ou multinacionais) que contribuem com bens ou serviços, mediante protocolos de parceria.
+
+
+##Intermediário
+Sinalizam uma família, acompanhando-a, fazem a ligação com o Projecto e com a Direcção.
+
+##Organigrama AFSO
+
+![](organigramaFS.jpg)
+

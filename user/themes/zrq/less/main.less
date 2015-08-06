@@ -1,5 +1,8 @@
 .page.home {
     padding: 0;
+    @media screen and (max-width: 1000px) {
+        margin-top: @header_height_small;
+    }
     .module.hero {
         .clearfix();
         &.hidden {
@@ -19,6 +22,19 @@
         background-color: @bloco_avisos_color;
         color: contrast(@bloco_avisos_color);
         text-align: center;
+        a {
+            text-decoration: none;
+            &.button {
+                color: @secondary_color;
+                background-color: @tertiary_color;
+                padding: 0.5rem;
+                border-radius: 4px;
+                .create-animation(all, 300ms, ease-in-out, 0);
+                &:hover {
+                    background-color: darken(@tertiary_color, 10%);
+                }
+            }
+        }
         .col-1-1 {
             padding: 1rem / @scale;
             width: 100%;
@@ -73,6 +89,24 @@
         }
         width: 100%;
         text-align: center;
+        a {
+            text-decoration: none;
+            color: @primary_color;
+            .create-animation(color, 300ms, ease-in-out, 0);
+            &:hover {
+                color: darken(@primary_color, 10%);
+            }
+            &.button {
+                color: lighten(@tertiary_color, 60%);
+                background-color: @tertiary_color;
+                padding: 0.5rem;
+                border-radius: 4px;
+                .create-animation(all, 300ms, ease-in-out, 0);
+                &:hover {
+                    background-color: darken(@tertiary_color, 10%);
+                }
+            }
+        }
         .areas {
             width: 100%;
             .col-1-3 {
@@ -106,12 +140,23 @@
         width: 100%;
         text-align: center;
         background-color: @bloco_noticias_color;
-        h1 {
+        h1,
+        p {
             color: contrast(@bloco_noticias_color);
         }
         hr {
             color: lighten(@bloco_noticias_color, 10%);
             width: 85%;
+        }
+        a {
+            // text-decoration: none;
+            // color: @link_color;
+            // .create-animation(all, 300ms, ease-in-out, 0);
+            &:hover {
+                color: contrast(@bloco_noticias_color);
+                // color: @link_hover_color;
+                text-decoration: none;
+            }
         }
         .noticia {
             .clearfix();
@@ -211,20 +256,29 @@
     }
 } // page.noticias
 .page.voluntarios {
-    padding-left: 0;
-    padding-right: 0;
-    @media screen and (max-width: 1000px) {
-        padding: @global_padding;
-        padding-top: 5rem;
-    }
+    padding: 0;
     .da-thumbs {
         width: 100%;
+        margin: 0;
     }
     .drop-down {
-        padding: 3rem 0 1rem 2rem;
+        background-color: @secondary_color;
+        padding: 1.5rem;
+        color: contrast(@secondary_color);
+        margin-top: @header_height_small;
+        label {
+            margin-right: 0.5rem;
+        }
+        select {
+            background-color: @secondary_color;
+        }
     }
     ul {
+        .clearfix();
+        height: 100%;
+        background-color: @tertiary_color;
         li {
+            box-shadow: none;
             width: 100% / 4;
             padding: 0;
             margin: 0;
@@ -235,16 +289,16 @@
                 }
             }
             .intro {
-                background-color: @primary_color;
-                color: contrast(@primary_color);
-                height: 225px;
+                .clearfix();
+                background-color: @tertiary_color;
+                color: contrast(@tertiary_color);
                 padding: 1rem;
                 p {
                     margin: 0;
                 }
                 i {
                     float: right;
-                    font-size: 4rem;
+                    font-size: 3rem;
                 }
             } // intro
             img {
@@ -255,9 +309,82 @@
             }
         } // li
     } // ul
+    .mapa-zona {
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+            padding: 0rem;
+        }
+        margin: 0 auto;
+        width: 60%;
+        padding: 3rem;
+        img {
+            border: 1px solid @header_color;
+            width: 100%;
+        }
+    }
+    @media screen and (min-width: 1001px) and (max-width: 1250px) {
+        font-size: @body_font_size / @scale;
+        line-height: @body_font_line_height / @scale;
+    }
+    @media screen and (max-width: 1000px) {
+        h4 {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+        .da-thumbs li a div {
+            position: static;
+        }
+        ul {
+            .clearfix();
+            background-color: #fff;
+            height: 100%;
+            li {
+                width: 100%;
+                .texto {
+                    background-color: lighten(@header_color, 10%);
+                    color: contrast(lighten(@header_color, 10%));
+                }
+                &.active {
+                    margin-bottom: 3.5rem;
+                }
+            }
+        }
+    }
 } // page.voluntarios
+.page.voluntario {
+    padding: @global_padding * @scale * @scale * @scale * @scale;
+    @media screen and (max-width: 1000px) {
+        padding: @global_padding;
+        padding-top: 5rem;
+    }
+    img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+} // page.voluntario
+.page.contactos {
+    padding: @global_padding * @scale * @scale * @scale * @scale;
+    @media screen and (max-width: 1000px) {
+        padding: @global_padding;
+        padding-top: 5rem;
+    }
+    .col-1-2 {
+        padding: 2rem;
+    }
+    img {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    p {
+        display: inline;
+    }
+    i {
+        margin-right: 2rem;
+    }
+} // page.contactos
 .page.default,
 .page.noticia,
+.page.newsletter,
 #error {
     padding: @global_padding * @scale * @scale * @scale * @scale;
     @media screen and (max-width: 1000px) {
@@ -265,7 +392,7 @@
         padding-top: 5rem;
     }
     img {
-        width: 100%;
+        max-width: 100%;
         margin: 0 auto;
     }
 } // page.default

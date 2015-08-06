@@ -1,10 +1,27 @@
 {% embed 'partials/base.html.twig' %}
 {% block content %}  
 	<section class="page voluntario">  		
-		<h1>{{ page.title }}</h1>
-		<h2>{{ page.header.zona }}</h2>
-	  	{% set img = page.media.images|first %}
+		<h2>{{ page.title }}</h2>
+		
+  		{% set img = page.media.images|first %}
 		<img src="{{ img.resize(450, 300).url }}">
+
+		<h4>Zona(s): {{ page.header.zona|join(',') }}</h4>
+
+		{% if page.header.coordenador %}
+		<h4 class="coordenador">Coordenador: {{ page.header.coordenador|join(',') }}</h4>
+		{% endif %}
+
+		{% if page.header.email %}
+		<a href="mailto:{{ page.header.email }}">
+		<h4 class="email">{{ page.header.email }}</h4>			
+		</a>
+		{% endif %}
+		
+		{% if page.header.telefone %}
+		<h4 class="telefone">Telefone: {{ page.header.telefone }}</h4>
+		{% endif %}
+
 		<div class="content">
 			{{ page.content }}
 		</div>

@@ -18,7 +18,7 @@ $(document).ready(function() {
         // speed: 300,
         slidesToShow: 1,
         arrows: false,
-        adaptiveHeight: true,
+        // adaptiveHeight: true,
         autoplay: true,
         autoplaySpeed: 2000
     });
@@ -64,6 +64,13 @@ $(".burger-icon").on("click", function(e) {
 });
 
 
+/************************************
+ * Dropdown event
+ ************************************/
+$("#zona").change(function(e) {
+    window.location.href = "?zona=" + $(this).val();
+});
+
 
 /************************************
  * Onscroll event to shrink header
@@ -87,12 +94,12 @@ $(window).scroll(function() {
 // - adds "smaller" class to the header 
 function initalizeStuff() {
     if ($(window).width() <= 1000) {
-        $('#da-thumbs > li').hoverdir("destroy");
+        $('#da-thumbs > li.active').hoverdir("destroy");
         $('.header').addClass('smaller');
         $(".module.hero.desktop").addClass("hidden");
         $(".module.hero.mobile").removeClass("hidden");
     } else {
-        $('#da-thumbs > li').hoverdir();
+        $('#da-thumbs > li.active').hoverdir();
         $(".module.hero.desktop").removeClass("hidden");
         $(".module.hero.mobile").addClass("hidden");
         if ($('.header').attr("data-home") === "true") {

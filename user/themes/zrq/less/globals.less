@@ -47,23 +47,14 @@ h6 {
     .setHeaderFontSize(@body_font_size * @scale * @scale);
 }
 
-a {
+a {    
     text-decoration: none;
     color: @link_color;
-    .create-animation(color, 300ms, ease-in-out, 0);
+    .create-animation(all, 300ms, ease-in-out, 0);
     &:hover {
         color: @link_hover_color;
-    }
-    &.button {
-        color: contrast(@header_color);
-        background-color: @header_color;
-        padding: 0.5rem;
-        border-radius: 4px;
-        .create-animation(all, 300ms, ease-in-out, 0);
-        &:hover {
-            background-color: lighten(@header_color, 40%);
-        }
-    }
+        text-decoration: underline;
+    }    
 }
 
 hr {
