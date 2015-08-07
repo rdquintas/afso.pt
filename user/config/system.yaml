@@ -11,14 +11,14 @@ pages:
     twig: false
 
 cache:
-  enabled: false  # ZRQ reverter para TRUE
+  enabled: true  # ZRQ reverter para TRUE
   check:
     method: file
   driver: auto
   prefix: 'g'
 
 twig:
-  cache: false  # ZRQ reverter para TRUE
+  cache: true  # ZRQ reverter para TRUE
   debug: true
   auto_reload: true
   autoescape: false
@@ -35,7 +35,7 @@ errors:
   log: true
 
 debugger:
-  enabled: true
+  enabled: false
   twig: true
   shutdown:
     close_connection: true

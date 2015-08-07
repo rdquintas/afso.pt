@@ -15,7 +15,7 @@
     -o-transition: all 0.3s;
     transition: all 0.3s;
     padding: @global_padding;
-    background-color: fade(@header_color, 80%);
+    background-color: fade(@header_color, 50%);
     a {
         text-decoration: none;
     }
@@ -24,7 +24,7 @@
         float: right;
         font-size: 33px;
         padding: 8px;
-        color: darken(contrast(@header_color), 50%);
+        color: @secondary_color;
         .create-animation(color, 200ms, ease-in-out, 0);
         &:hover {
             color: contrast(@header_color);
@@ -166,7 +166,7 @@
     }
 } // header
 nav#mobile-menu {
-    background-color: lighten(@header_color, 20%);
+    background-color: lighten(@header_color, 10%);
     display: none;
     font-size: @body_font_size / @scale;
     position: absolute;
@@ -188,15 +188,22 @@ nav#mobile-menu {
         list-style-type: none;
         margin: 0.1rem;
         cursor: pointer;
-        color: darken(contrast(@header_color), 50%);
+        color: @secondary_color;
         .create-animation(color, 200ms, ease-in-out, 0);
         &:hover {
             color: contrast(@header_color);
         }
+        &.active {
+            color: contrast(@header_color);
+            a {
+                color: contrast(@header_color);
+            }
+        }
         a {
-            color: darken(contrast(@header_color), 50%);
+            color: @secondary_color;
             .create-animation(color, 200ms, ease-in-out, 0);
             &:hover {
+                text-decoration: none;
                 color: contrast(@header_color);
             }
         }

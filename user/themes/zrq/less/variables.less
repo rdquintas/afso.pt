@@ -9,11 +9,12 @@
 @body_font_size: 1.3rem;
 @body_font_weight: 400;
 @body_font_line_height: @body_font_size * @scale;
-// @import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic); // body
-@body_font_stack: "Gentium Book Basic", serif;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300); // body
+@body_font_stack: 'Open Sans Condensed', sans-serif;
 // @import url(http://fonts.googleapis.com/css?family=Open+Sans); // header
-@header_font_stack: "Open Sans";
-@header_font_weight: 400;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800); // header
+@header_font_stack: 'Open Sans', sans-serif;
+@header_font_weight: 800;
 
 // COLORS
 @primary_color: #0179AD; // azul AFSO
@@ -24,7 +25,7 @@
 @header_color: @primary_color;
 @bloco_avisos_color: @secondary_color;
 @bloco_noticias_color: @secondary_color;
-@bloco_testemunho_color: @primary_color;
+@bloco_testemunho_color: @tertiary_color;
 @bloco_valores_color: @secondary_color;
 
 @link_color: darken(@tertiary_color, 0%);

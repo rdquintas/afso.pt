@@ -23,11 +23,13 @@ body {
     font-weight: @body_font_weight;
     line-height: @body_font_line_height;
     @media screen and (max-width: 1000px) {
-        font-size: @body_font_size / @scale;
+        font-size: @body_font_size;
+        line-height: @body_font_size * @scale;
     }
 }
 
-section, header {
+section,
+header {
     max-width: @site_max_width;
 }
 
@@ -47,14 +49,18 @@ h6 {
     .setHeaderFontSize(@body_font_size * @scale * @scale);
 }
 
-a {    
+a {
     text-decoration: none;
     color: @link_color;
+    font-weight: 800;
     .create-animation(all, 300ms, ease-in-out, 0);
     &:hover {
         color: @link_hover_color;
         text-decoration: underline;
-    }    
+    }
+    @media screen and (max-width: 1000px) {
+        text-decoration: none;
+    }
 }
 
 hr {

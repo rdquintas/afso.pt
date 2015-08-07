@@ -16,37 +16,27 @@
 {% endif %}
 
 	<section class="page voluntarios"> 
-		<div class="drop-down">
-			<label for="zona">Escolha a Zona:</label>
-			<select id="zona">
-				{% if zona|lower == "todas"  %}		
-					{{ _self.createSelectEntry("true", "todas") }}
-				{% else %}	
-					{{ _self.createSelectEntry("false", "todas") }}
-				{% endif %}
-
-				{% for i in page.header.zonas %}    	
-		    		{% if i|lower == zona|lower  %}		
-						{{ _self.createSelectEntry("true", i) }}
-					{% else %}	
-						{{ _self.createSelectEntry("false", i) }}
-					{% endif %}
-				{% endfor %}
-			</select>
-		</div>	
-
     	<ul id="da-thumbs" class="da-thumbs">
 	       	<li>
 				<div class="intro">
-				{% if zona == "todas" %}
-					<h4 class="nome">Todos os nossos voluntários</h4>
+					<h3 class="nome">Escolha a Zona</h3>
+					<select id="zona">
+						{% if zona|lower == "todas"  %}		
+							{{ _self.createSelectEntry("true", "todas") }}
+						{% else %}	
+							{{ _self.createSelectEntry("false", "todas") }}
+						{% endif %}
+
+						{% for i in page.header.zonas %}    	
+				    		{% if i|lower == zona|lower  %}		
+								{{ _self.createSelectEntry("true", i) }}
+							{% else %}	
+								{{ _self.createSelectEntry("false", i) }}
+							{% endif %}
+						{% endfor %}
+					</select>
 					<i class="fa fa-arrow-circle-right"></i>
-				{% else %}
-					<h4 class="nome">Os voluntários da</h4>
-					<h4 class="zona">zona: {{ zona }}</h4>
-					<i class="fa fa-arrow-circle-right"></i>
-				{% endif %}
-				</div>
+				</div>	
 			</li>
 			{% for voluntario in collection %}
 				{% set validVoluntario = false %}

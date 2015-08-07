@@ -13,6 +13,7 @@
     "pure": "~0.6.0",
     "echojs": "~1.7.1",
     "superfish": "~1.7.5",
-    "normalize-css": "~3.0.3"
+    "normalize-css": "~3.0.3",
+    "slick-carousel": "~1.5.8"
   }
 }
