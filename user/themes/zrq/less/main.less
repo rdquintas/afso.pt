@@ -193,7 +193,7 @@
         padding-bottom: @global_padding * @scale * @scale * @scale;
         @media screen and (max-width: 1000px) {
             padding-right: 0;
-            padding-left: 0;           
+            padding-left: 0;
         }
         width: 100%;
         background-color: @bloco_testemunho_color;
@@ -410,6 +410,14 @@
     }
     .col-1-2 {
         padding: 2rem;
+        @media screen and (max-width: 1000px) {
+            padding: 0.5rem;
+        }
+    }
+    .email {
+        a {
+            margin-left: -9px;
+        }
     }
     img {
         max-width: 60%;

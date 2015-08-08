@@ -78,7 +78,9 @@
 			{% if mapazona %}
 			<div class="mapa-zona">
 				<h2>Mapa da Zona</h2>
-				<img src="{{ mapazona.url }}">	
+				<a href="{{ mapazona.url }}">
+					<img src="{{ mapazona.url }}">	
+				</a>
 			</div>		
 			{% endif %}
 		{% endif %}
