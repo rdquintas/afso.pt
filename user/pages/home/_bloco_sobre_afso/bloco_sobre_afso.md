@@ -1,6 +1,6 @@
 ---
 bloco_visivel: true
-title: A AFSO
+title: Associação Família Solidária de Oeiras
 sub_title: Escolha cada uma das àreas em baixo para ficar a saber mais sobre a associação
 area1:
 	title: Associação

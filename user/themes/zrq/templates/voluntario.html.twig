@@ -6,12 +6,12 @@
   		{% set img = page.media.images|first %}
 		<img src="{{ img.resize(450, 300).url }}">
 
-		<h4>Zona(s): {{ page.header.zona|join(',') }}</h4>
+		<h4>Zona(s): {{ page.header.zona_nomes|join(',') }}</h4>
 
-		{% if page.header.coordenador %}
+{# 		{% if page.header.coordenador %}
 		<h4 class="coordenador">Coordenador: {{ page.header.coordenador|join(',') }}</h4>
 		{% endif %}
-
+ #}
 		{% if page.header.email %}
 		<a href="mailto:{{ page.header.email }}">
 		<h4 class="email">{{ page.header.email }}</h4>			

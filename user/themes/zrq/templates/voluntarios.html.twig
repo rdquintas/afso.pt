@@ -1,10 +1,19 @@
 {% embed 'partials/base.html.twig' %}
 {% block content %}  
 {% macro createSelectEntry(selected, value) %}
+	
+	{% if value == "todas"  %}
+		{% set key = "todas" %}	
+		{% set val =  "Todas" %}	
+	{% else %}	
+		{% set key =  value[0] %}	
+		{% set val =  value[1] %}	
+	{% endif %}
+
 	{% if selected == "true"  %}
-		<option value="{{ value }}" selected="selected">{{ value }}</option>
+		<option value="{{ key }}" selected="selected">{{ val }}</option>
 	{% else %}			
-		<option value="{{ value }}">{{ value }}</option>
+		<option value="{{ key }}">{{ val }}</option>
 	{% endif %}
 {% endmacro %}
 
@@ -15,11 +24,12 @@
 	{% set zona = "todas" %}
 {% endif %}
 
+{{dump(page.header.teste[1][1])}}
 	<section class="page voluntarios"> 
     	<ul id="da-thumbs" class="da-thumbs">
 	       	<li>
 				<div class="intro">
-					<h3 class="nome">Escolha a Zona</h3>
+					<h4 class="nome">Procure aqui a zona/voluntário mais próximo de si</h4>
 					<select id="zona">
 						{% if zona|lower == "todas"  %}		
 							{{ _self.createSelectEntry("true", "todas") }}
@@ -28,14 +38,14 @@
 						{% endif %}
 
 						{% for i in page.header.zonas %}    	
-				    		{% if i|lower == zona|lower  %}		
+				    		{% if i[0]|lower == zona|lower  %}		
 								{{ _self.createSelectEntry("true", i) }}
 							{% else %}	
 								{{ _self.createSelectEntry("false", i) }}
 							{% endif %}
 						{% endfor %}
 					</select>
-					<i class="fa fa-arrow-circle-right"></i>
+					{# <i class="fa fa-arrow-circle-right"></i> #}
 				</div>	
 			</li>
 			{% for voluntario in collection %}
@@ -53,12 +63,12 @@
 							<img src="{{ theme_url }}/images/loading_spinner.gif" alt="" data-echo="{{ img.resize(450, 300).url }}">
 							<div class="texto">
 								<h4 class="nome">{{ voluntario.title }}</h4>
-								<p class="zona">Zona(s): {{ voluntario.header.zona|join(',') }}</p>
+								<p class="zona">Zona(s): {{ voluntario.header.zona_nomes|join(',') }}</p>
 
-								{% if voluntario.header.coordenador %}
+							{# 	{% if voluntario.header.coordenador %}
 								<p class="coordenador">Coordenador: {{ voluntario.header.coordenador|join(',') }}</p>
 								{% endif %}
-
+ #}
 								{% if voluntario.header.email %}
 								<p class="email">Email: {{ voluntario.header.email }}</p>			
 								{% endif %}

@@ -20,7 +20,7 @@ $(document).ready(function() {
         arrows: false,
         // adaptiveHeight: true,
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 6000
     });
 
     // Initialize slick slider for VALORES
